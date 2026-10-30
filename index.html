@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 스케줄 & 생산성</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      color: #333333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #FAFAFA;
+    }
+    .container {
+      background: #FFFFFF;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    h1 {
+      font-size: 24px;
+      color: #111827;
+      border-bottom: 2px solid #E5E7EB;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 18px;
+      color: #1F2937;
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 14.5px;
+      color: #4B5563;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .highlight-box {
+      background: #EFF6FF;
+      border-left: 4px solid #3B82F6;
+      padding: 14px 18px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .date-info {
+      font-size: 13px;
+      color: #6B7280;
+      margin-top: 30px;
+      border-top: 1px solid #E5E7EB;
+      padding-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>스케줄 & 생산성 개인정보처리방침</h1>
+    
+    <div class="highlight-box">
+      <strong>핵심 요약:</strong> '스케줄 & 생산성' 앱은 사용자의 어떠한 개인정보도 외부 서버로 전송하거나 수집하지 않으며, 모든 데이터(일정, 할 일, 목표 등)는 오직 사용자의 기기 내부(Local Storage)에만 암호화 저장됩니다.
+    </div>
+
+    <h2>1. 수집하는 개인정보 항목</h2>
+    <p>'스케줄 & 생산성' 앱은 별도의 회원가입이나 계정 연동 절차가 없으며, 이름, 전화번호, 이메일, 위치 정보 등의 식별 가능한 개인정보를 서버로 수집·저장·전송하지 않습니다.</p>
+    <ul>
+      <li><strong>사용자가 입력하는 데이터:</strong> 할 일, 캘린더 일정, 목표, 뽀모도로 집중 기록 등</li>
+      <li><strong>저장 방식:</strong> 전적으로 기기 내부 로컬 저장소(AsyncStorage / SQLite)에만 물리적으로 저장되며, 외부 클라우드나 개발자 서버로 일체 전송되지 않습니다.</li>
+    </ul>
+
+    <h2>2. 앱에서 사용하는 기기 권한 및 목적</h2>
+    <p>본 앱은 원활한 기능 제공을 위해 최소한의 시스템 권한만을 요구하며, 본래 목적 이외의 용도로 활용하지 않습니다.</p>
+    <ul>
+      <li><strong>알림 표시 권한 (POST_NOTIFICATIONS):</strong> 사용자가 설정한 일정 시작 알림, 데일리 루틴 리마인더를 기기 상단바에 표시하기 위해 사용됩니다.</li>
+      <li><strong>정밀 알람 권한 (SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM):</strong> 배터리 절전 모드에서도 사용자가 지정한 시각 정시에 오차 없이 알림을 울리도록 보장하기 위해 사용됩니다.</li>
+      <li><strong>진동 권한 (VIBRATE):</strong> 알림 도래 시 햅틱 피드백 및 진동을 울리기 위해 사용됩니다.</li>
+      <li><strong>재부팅 수신 권한 (RECEIVE_BOOT_COMPLETED):</strong> 기기를 재부팅했을 때 사용자가 기존에 등록해 둔 일정 알림 스케줄을 기기 내부에서 유지·복구하기 위해 사용됩니다.</li>
+    </ul>
+
+    <h2>3. 개인정보의 제3자 제공 및 위탁</h2>
+    <p>본 앱은 사용자의 데이터를 수집하지 않으므로, 어떠한 제3자에게도 개인정보를 제공하거나 외부 업체에 처리를 위탁하지 않습니다. 타사 광고 SDK나 불필요한 분석 트래커를 포함하지 않습니다.</p>
+
+    <h2>4. 데이터의 파기 및 백업 권한</h2>
+    <ul>
+      <li>모든 데이터는 사용자의 기기에만 존재하므로, 앱을 기기에서 삭제(삭제/초기화)하면 저장되어 있던 모든 데이터는 즉시 영구 파기됩니다.</li>
+      <li>사용자는 앱 내 '보관·백업' 메뉴를 통해 본인의 데이터를 직접 JSON 파일 형태로 내보내거나 가져올 수 있는 완전한 통제권을 가집니다.</li>
+    </ul>
+
+    <h2>5. 아동의 개인정보 보호</h2>
+    <p>본 앱은 만 13세 미만 아동의 개인정보를 수집하지 않으며, 전 연령이 안전하게 사용할 수 있는 오프라인 생산성 도구입니다.</p>
+
+    <h2>6. 개인정보 보호책임자 및 문의처</h2>
+    <p>개인정보 처리방침과 관련하여 문의사항이나 의견이 있으신 경우 아래 연락처로 문의해 주시기 바랍니다.</p>
+    <ul>
+      <li><strong>서비스명:</strong> 스케줄 & 생산성 (Schedule App)</li>
+      <li><strong>관리 담당자:</strong> 개발팀</li>
+      <li><strong>이메일:</strong> your_email@gmail.com</li>
+    </ul>
+
+    <div class="date-info">
+      공고일자: 2026년 10월 30일<br>
+      시행일자: 2026년 10월 30일
+    </div>
+  </div>
+</body>
+</html>
